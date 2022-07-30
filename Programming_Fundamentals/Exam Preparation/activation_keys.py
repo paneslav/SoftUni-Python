@@ -10,7 +10,7 @@ while True:
     if operation[0] == 'Contains':
         wanted_string = operation[1]
         if wanted_string in raw_key:
-            print(f'{raw_key} contains {wanted_string}.')
+            print(f'{raw_key} contains {wanted_string}')
         else:
             print(f'Substring not found!')
 

@@ -3,7 +3,7 @@ def add_new_plants():
     for _ in range(n):
         plant_name, plant_rarity = input().split('<->')
         if plant_name in plants_data:
-            plants_data[plant_name]['rarity'] += int(plant_rarity)
+            plants_data[plant_name]['rarity'] = int(plant_rarity)
             continue
         plants_data[plant_name] = {'rarity': int(plant_rarity), 'rating': []}
 

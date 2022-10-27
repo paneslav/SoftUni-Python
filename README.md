@@ -1,3 +1,3 @@
 # SoftUni Python
 
-This is where I'll upload my homeworks and projects from the SoftUni modules.
+This is where I'll upload homeworks and projects from SoftUni Python module.

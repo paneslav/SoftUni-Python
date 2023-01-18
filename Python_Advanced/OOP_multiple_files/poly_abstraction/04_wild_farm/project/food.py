@@ -31,6 +31,3 @@ class Seed(Food):
     def __init__(self, quantity):
         super().__init__(quantity)
 
-
-vegi = Vegetable(12)
-food = Food(12)

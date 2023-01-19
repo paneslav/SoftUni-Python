@@ -1,0 +1,45 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 70px 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+blockquote {
+    border-left: 4px solid rgb(221, 221, 221);
+    text-indent: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.author {
+    text-align: right;
+}
+
+thead {
+    background-color: gray;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, tr, td, th{
+    border: 1px solid gray;
+    padding: 4px 4px;
+    text-align: left;
+}
+
+.even {
+    background-color: lightgray;
+}
+
+/* td {
+    padding: 4px 4px;
+} */

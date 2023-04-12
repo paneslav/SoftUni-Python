@@ -9,5 +9,5 @@ class Beverage(Item):
         return self.grams * self.BASE_MULT
 
     def __str__(self):
-        msg = [f"Информация за продукт: {self.name}", f"Грамаж: {self.grams}", f"Калории: {self.cals}"]
+        msg = [f"Информация за продукт: {self.name}", f"Милилитри: {self.grams}", f"Калории: {self.cals:.2f}"]
         return "\n".join(msg)

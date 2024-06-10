@@ -1,0 +1,15 @@
+1. Set the name of the host to: SRV-CORE
+	- From SConfig select option 2) and change the name
+	OR "Rename-Computer -NewName SRV-CORE"
+	OR "netdom renamecomputer %COMPUTERNAME% /newname:SRV-CORE"
+
+2. Set the workgroup to WSALAB
+	- From SConfig select option 1) and change the name
+
+3. Change the time zone to Bulgaria
+	- From SConfig select option 9) and change the time
+
+4. Create new administrator user named labadmin with password Password1 (or another password f your choice) and full name Lab Admin
+	- "New-LocalUser -Name labadmin -FullName "Lab Admin"
+	- select a password
+	- Add-LocalGroupMember -Group Administrators -Member labadmin

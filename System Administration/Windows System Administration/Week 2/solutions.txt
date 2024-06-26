@@ -1,0 +1,18 @@
+1. Software and Services Management
+	- Download the file from a remote URL: wget -Uri https://zahariev.pro/files/WSA-M2-Service.zip -OutFile C:\WSAService.zip
+	- Expand-Archive -Path WSAService.zip -DestinationPath C:\temp
+	- Move-Item -Path WSAService -Destination C:\
+	- New-Service -Name WSAService -BinaryPathName C:\WSAService\WSAService.exe
+	- Start-Service WSAService
+	- Get-Content C:\WSA.log
+2. Disk Management
+	- Initialize-Disk -Number 1 -PartitionStyle GPT
+	- New-Partition -DiskNumber 1 -DriveLetter X -Size 6GB | Format-Volume -FileSystem NTFS -NewFileSystemLabel Disk-NTFS
+	- New-Partition -DiskNumber 1 -DriveLetter Y -UseMaximumSize | Format-Volume -FileSystem FAT32 -NewFileSystemLabel Disk-FAT32
+3. Network Management
+	- Rename-NetAdapter -Name "Ethernet" -NewName "NET-Internet"
+	- Rename-NetAdapter -Name "Ethernet 2" -NewName "NET-Local"
+	- Set-NetConnectionProfile -InterfaceAlias "NET-Internet" -NetworkCategory Public
+	- Set-NetConnectionProfile -InterfaceAlias "NET-Local" -NetworkCategory Private
+	- New-NetIPAddress -InterfaceAlias "NET-Local" -IPAddress 192.168.220.1 -PrefixLength 24
+	- Enable-NetFirewallRule -Name FPS-ICMP4-ERQ-In
